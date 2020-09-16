@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "src/main/index.js",
   "scripts": {
-    "lint": "eslint . --ext .js,.ts --ignore-path .gitignore",
-    "lint:fix": "yarn lint --fix",
+    "lint:nofix": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "lint": "yarn lint:nofix --fix",
     "format": "prettier --write '**/*.{ts,js,css,html}'"
   },
   "repository": "https://github.com/LiftOffLLC/oq-analyst-sdk.git",
