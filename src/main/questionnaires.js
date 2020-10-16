@@ -19,12 +19,17 @@ class Questionnaires extends Rest {
 
   async insert({
     medicalRecordNumber,
-    isMinor,
+    instrument,
     sessionNumber,
     dateMDY,
     answers,
   }) {
-    const iInstrumentID = isMinor ? 5 : 4;
+    const instrumentMap = {
+      minor: 5,
+      adult: 4,
+      therapist: 112,
+    };
+    const iInstrumentID = instrumentMap[instrument];
     const strResponseData = answers.join('~');
     const questionnaire = {
       strPersonID: '',
