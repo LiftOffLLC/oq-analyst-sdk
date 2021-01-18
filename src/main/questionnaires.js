@@ -35,7 +35,7 @@ class Questionnaires extends Rest {
       strPersonID: '',
       strMedicalRecordNumber: medicalRecordNumber,
       iInstrumentID,
-      strClinicName: 'Shop 1',
+      strClinicName: 'Brentwood',
       strCompletedByCode: 'Self',
       strSettingOfCare: 'Outpatient',
       strSessionNumber: sessionNumber,
