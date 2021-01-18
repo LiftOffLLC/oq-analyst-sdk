@@ -24,7 +24,7 @@ class Clients extends Rest {
       LastName: lastName,
       BirthDate: dobMDY,
       Gender,
-      Clinic: 'Shop 1',
+      Clinic: 'Brentwood',
       ClinicianPersonID: clinicianId,
       ClinicianCustomID: '',
       InstrumentCode,
