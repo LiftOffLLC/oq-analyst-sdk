@@ -82,6 +82,14 @@ class Clients extends Rest {
     };
     return await this.request('/ReactivateClient', client);
   }
+
+  async discharge(medicalRecordNumber) {
+    const client = {
+      strMedicalRecordNumber: medicalRecordNumber,
+      strDischargeType: 'Unknown',
+    };
+    return await this.request('/EpisodeDischarge', client);
+  }
 }
 
 module.exports = Clients;
